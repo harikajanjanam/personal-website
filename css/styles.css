@@ -3637,7 +3637,7 @@ textarea.form-control-lg {
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
-  pointer-events: none;
+
   cursor: default;
 }
 
@@ -11731,4 +11731,126 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+/* New Styles */
+
+.main-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+}
+.sub-block-1 {
+  background-color: #111;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+.sub-block-2 {
+  background-image: url(../assets/harika-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  z-index: 1;
+} 
+.sub-block-2::before {
+  background-color: rgba(0,0,0,0.68);
+  content: " ";
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border-color: #333;
+  margin-bottom: 24px;
+  border-width: 20px;
+  background-image: url(../assets/Harika-Profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+}
+.status {
+  color: #8a8a8a;
+  margin-top: 8px;
+  font-size: small;
+}
+.vertical-navbar{
+
+}
+.main-nav {
+  margin-top: 64px;
+}
+.navbar-nav {
+  align-items: center;
+}
+a:active {
+  color: red; 
+}
+.name {
+  font-family: "Open Sans",sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  margin-bottom: 29px;
+}
+.sidebar-name {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+.job-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  margin-bottom: 0;
+  display: flex;
+}
+.typewriter {
+  font-family: monospace;
+  font-size: 24px;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-color: black;
+  }
+  50.01%, 100% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  animation: blink 1s step-end infinite;
 }
