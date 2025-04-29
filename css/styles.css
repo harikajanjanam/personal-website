@@ -11743,13 +11743,17 @@ html {
 }
 .sub-block-1 {
   background-color: #111;
-  width: 15%;
   display: flex;
   justify-content: center;
-  height: 100vh;
   align-items: center;
   color: #fff;
   flex-direction: column;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 235px;
+  z-index: 999;
 }
 .sub-block-2 {
   background-image: url(../assets/harika-bg.jpg);
@@ -11757,7 +11761,6 @@ html {
   background-size: cover;
   position: relative;
   background-position: center center;
-  width: 85%;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -11853,4 +11856,97 @@ a:active {
 
 .typewriter {
   animation: blink 1s step-end infinite;
+}
+.sections-wrapper {
+  position: relative;
+  padding-left: 235px;
+}
+.single-section {
+  background-color: #fff;
+  padding: 85px 40px;
+}
+.single-section .section-heading>.section-title {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -.25px;
+  line-height: 100%;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 9;
+}
+.single-section .section-heading {
+  margin-bottom: 48px;
+  text-align: left;
+}
+.single-section .section-heading>.section-description {
+  font-size: 15px;
+}
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center !important;
+}
+.row {
+  -ms-flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.about-area .about-img img {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, .18);
+  width: 430px;
+}
+
+.img-thumbnail {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  height: auto;
+  max-width: 100%;
+  padding: .25rem;
+}
+.about-area .about-content .content-subtitle {
+  color: #dc3545;
+}
+.about-area .about-content .content-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.about-area .about-content .content-description {
+  font-size: 15px;
+}
+.about-area .about-content .content-info {
+  font-size: 15px;
+  margin-bottom: 4px;
+  padding: 27px 0;
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+  margin-bottom: 1rem;
+}
+.about-area .about-content .content-download, .about-area .about-content .content-work {
+  margin-right: 16px;
+}
+
+.btn.button-scheme {
+  background-color: #dc3545 !important;
+  border: 1px solid #dc3545 !important;
+}
+.button-main.button-scheme {
+  color: #fff;
+}
+.button-main {
+  background-color: #fff;
+  border: 1px solid #c5c5c5;
+  border-radius: 30px;
+  color: #222;
+  font-size: 14px;
+  padding: 10px 38px;
 }
